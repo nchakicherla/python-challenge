@@ -55,6 +55,7 @@ print("-------------------------")
 print("Total Votes: " + str(total_votes))
 print("-------------------------")
 for cand in unique_candidates:
+	# round percents to 3 decimals
 	print(cand + ": " + str(round(percentages[cand], 3)) + "% (" + str(tallies[cand]) + ")")
 print("-------------------------")
 print("Winner: " + winner)
@@ -70,9 +71,10 @@ with open(output_write_path, "w") as f:
 	f.write("Total Votes: " + str(total_votes) + "\n")
 	f.write("-------------------------\n")
 	for cand in unique_candidates:
+		# round percents to 3 decimals
 		f.write(cand + ": " + str(round(percentages[cand], 3)) + "% (" + str(tallies[cand]) + ")\n")
 	f.write("-------------------------\n")
 	f.write("Winner: " + winner + "\n")
-	f.write("-------------------------")
+	f.write("-------------------------\n")
 	
 	f.close()
