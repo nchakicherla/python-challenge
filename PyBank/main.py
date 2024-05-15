@@ -43,6 +43,7 @@ print("Financial Analysis")
 print("----------------------------")
 print("Total Months:", number_months_measured)
 print("Total: $" + str(net_amount))
+# calculate average change and round to 2 decimals
 print("Average Change: $" + str(round(sum(month_change) / len(month_change), 2)))
 print("Greatest Increase in Profits: " + str(max_month) + " ($" + str(max_monthly_increase) + ")")
 print("Greatest Decrease in Profits: " + str(min_month) + " ($" + str(min_monthly_increase) + ")")
@@ -56,8 +57,9 @@ with open(output_write_path, "w") as f:
 	f.write("----------------------------\n")
 	f.write("Total Months: " + str(number_months_measured) + "\n")
 	f.write("Total: $" + str(net_amount) + "\n")
+	# calculate average change and round to 2 decimals
 	f.write("Average Change: $" + str(round(sum(month_change) / len(month_change), 2)) + "\n")
 	f.write("Greatest Increase in Profits: " + str(max_month) + " ($" + str(max_monthly_increase) + ")\n")
-	f.write("Greatest Decrease in Profits: " + str(min_month) + " ($" + str(min_monthly_increase) + ")")
+	f.write("Greatest Decrease in Profits: " + str(min_month) + " ($" + str(min_monthly_increase) + ")\n")
 	
 	f.close()
