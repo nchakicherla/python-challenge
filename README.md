@@ -1,6 +1,6 @@
 # Module 3 Challenge - python-challenge
 
-Assignment submission consists of solutions two 2 parts, PyBank and PyPoll.
+Assignment submission consists of solutions for two parts: PyBank and PyPoll.
 
 ## PyBank
 
